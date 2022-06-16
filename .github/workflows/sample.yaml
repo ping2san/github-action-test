@@ -16,7 +16,7 @@ jobs:
             npm -v
 
 
- run-windows-build:
+  run-windows-build:
     runs-on: windows-latest
     steps:
       - run: choco install gh
