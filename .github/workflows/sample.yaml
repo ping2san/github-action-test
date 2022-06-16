@@ -1,3 +1,4 @@
+# This is a sample job to test
 name: shell commands
 
 on : [push, pull_request]
@@ -13,3 +14,10 @@ jobs:
             whoami
             node -v
             npm -v
+
+
+  build:
+    runs-on: windows-latest
+    steps:
+      - run: choco install gh
+      - run: gh version
